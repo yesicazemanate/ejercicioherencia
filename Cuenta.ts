@@ -1,5 +1,4 @@
-class Cuenta {
-export default class Cuenta {
+  export default class Cuenta {
 
     protected numRetiro: number = 0;
     protected numConsignacion: number = 0;
@@ -50,11 +49,15 @@ export default class Cuenta {
     }
 
     
-    consignar(){
-        
+    consignar(consignacion:number){
+        let saldoTotal=this.saldo+ consignacion
+        return `el saldo total de la cuenta es : ${saldoTotal} `
     }
-    retirar(){
-
+    retirar(retiro: number ){
+        if(retiro<= this.saldo){
+        let retiroTotal = this.saldo-retiro
+        return `el saldo que se retiro es ${retiro} el saldo total es ${retiroTotal}`
+        }
     }
     calcularInteresMensual(){
 
