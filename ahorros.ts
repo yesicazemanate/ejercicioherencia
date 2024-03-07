@@ -2,6 +2,7 @@ import Cuenta from "./Cuenta";
 
 
 
+
   
 class Ahorros extends Cuenta{
     private estado: boolean;
@@ -62,4 +63,8 @@ extractoMensual(): void {
     }
 }
  
+
+   
+
+
 

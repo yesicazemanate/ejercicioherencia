@@ -29,16 +29,16 @@
     setNumRetiro(numRetiro: number) { 
         this.numRetiro = numRetiro
     }
-    get NumConsignacion(): number {
+    getNumConsignacion(): number {
         return this.numConsignacion
     }
-    set NumConsignacion(numConsignacion: number) {
+    setNumConsignacion(numConsignacion: number) {
         this.numConsignacion = numConsignacion
     }
-    get TasaAnual(): number { 
+    getTasaAnual(): number { 
         return this.tasaAnual
     }
-    set TasaAnual(tasaAnual: number) {
+    setTasaAnual(tasaAnual: number) {
         this.tasaAnual = tasaAnual
     }
     getComisionMes(): number {
@@ -62,7 +62,7 @@
         }
     }
     calcularInteresMensual(){
-        let interes= this.saldo * this.TasaAnual
+        let interes= this.saldo * this.tasaAnual
         let saldoCuenta = this.saldo+interes
 return  `el interes recibido es ${interes} saldo total de la cuenta es ${saldoCuenta}`
     }
