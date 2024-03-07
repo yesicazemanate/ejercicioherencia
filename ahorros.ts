@@ -1,10 +1,7 @@
 import Cuenta from "./Cuenta";
 
-<<<<<<< HEAD
 export default class Ahorros extends Cuenta {
-=======
-class Ahorros extends Cuenta {
->>>>>>> d2f7ca150a84ecda24f00bf0366aad8ef340a981
+
     private estado: boolean;
 
     constructor(numRetiro: number, numConsignacion: number, saldo: number, tasaAnual: number, comisionMes: number) {
@@ -22,12 +19,9 @@ class Ahorros extends Cuenta {
 
     }
 
-
-<<<<<<< HEAD
-    consignar(){
-=======
+  
     consignar(consignacion: number) {
->>>>>>> d2f7ca150a84ecda24f00bf0366aad8ef340a981
+
         if (this.estado) {
             super.consignar(consignacion);
         } else {
@@ -35,11 +29,9 @@ class Ahorros extends Cuenta {
         }
     }
 
-<<<<<<< HEAD
-    retirar(){
-=======
+
     retirar(retiro: number) {
->>>>>>> d2f7ca150a84ecda24f00bf0366aad8ef340a981
+
         if (this.estado) {
             super.retirar(retiro);
         } else {
@@ -69,12 +61,11 @@ class Ahorros extends Cuenta {
     }
 }
 
-<<<<<<< HEAD
-=======
+
 // imprimir(){
 //     console.log("Saldo actual: " + this.saldo);
 //     console.log("Comisión mensual: " + this.comisionMensual);
 //     console.log("Número de transacciones realizadas: " + this.numTransacciones);
 
 // }
->>>>>>> d2f7ca150a84ecda24f00bf0366aad8ef340a981
+

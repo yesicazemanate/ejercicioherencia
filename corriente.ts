@@ -40,8 +40,8 @@ export default class CuentaCorriente extends Cuenta {
    setsobreGiro(sobreGiro:number){
     this.sobreGiro = sobreGiro
    }
-<<<<<<< HEAD
+
 } 
-=======
-}
->>>>>>> 00bd30f0716c184a716f4fb603336331bd9e2fbf
+
+
+
