@@ -49,14 +49,14 @@
     }
 
     
-    consignar(consignacion:number){
-        let saldoTotal=this.saldo+ consignacion
+    consignar(){
+        let saldoTotal=this.saldo+ this.numConsignacion
         return `el saldo total de la cuenta es : ${saldoTotal} `
     }
-    retirar(retiro: number ){
-        if(retiro<= this.saldo){
-        let retiroTotal = this.saldo-retiro
-        return `el saldo que se retiro es ${retiro} el saldo total es ${retiroTotal}`
+    retirar(){
+        if(this.numRetiro<= this.saldo){
+        let retiroTotal = this.saldo-this.numRetiro
+        return `el saldo que se retiro es ${this.numRetiro}} el saldo total es ${retiroTotal}`
         }
     }
     calcularInteresMensual(){
