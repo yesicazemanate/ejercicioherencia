@@ -1,4 +1,5 @@
-  export default class Cuenta {
+export default class Cuenta {
+    // class Cuenta {
 
     protected numRetiro: number = 0;
     protected numConsignacion: number = 0;
@@ -16,17 +17,17 @@
 
     }
 
-    getSaldo(): number{
+    getSaldo(): number {
         return this.saldo
     }
-    setSaldo(Saldo: number){
-        this.saldo =  Saldo
+    setSaldo(Saldo: number) {
+        this.saldo = Saldo
     }
 
-    getNumRetiro(): number { 
+    getNumRetiro(): number {
         return this.numRetiro
     }
-    setNumRetiro(numRetiro: number) { 
+    setNumRetiro(numRetiro: number) {
         this.numRetiro = numRetiro
     }
     get NumConsignacion(): number {
@@ -35,7 +36,7 @@
     set NumConsignacion(numConsignacion: number) {
         this.numConsignacion = numConsignacion
     }
-    get TasaAnual(): number { 
+    get TasaAnual(): number {
         return this.tasaAnual
     }
     set TasaAnual(tasaAnual: number) {
@@ -48,29 +49,28 @@
         this.comisionMes = comisionMes
     }
 
-    
-    consignar(consignacion : number ){
-        let saldoTotal=this.saldo+ consignacion
-        return `el saldo total de la cuenta es : ${saldoTotal} `
+
+    consignar(consignacion: number) {
+        let saldoTotal = this.saldo + consignacion
+        console.log( `el saldo total de la cuenta es : ${saldoTotal} `)
     }
-    retirar(retiro: number){
-        if(retiro<= this.saldo){
-        let retiroTotal = this.saldo-retiro
-        return `el saldo que se retiro es ${retiro}} el saldo total es ${retiroTotal}`
+    retirar(retiro: number) {
+        if (retiro <= this.saldo) {
+            let retiroTotal = this.saldo - retiro
+            console.log(`el saldo que se retiro es ${retiro}} el saldo total es ${retiroTotal}`)
         }
     }
-    calcularInteresMensual(){
-        let interes= this.saldo * this.TasaAnual
-        let saldoCuenta = this.saldo+interes
-return  `el interes recibido es ${interes} saldo total de la cuenta es ${saldoCuenta}`
+    calcularInteresMensual() {
+        let interes = this.saldo * this.TasaAnual
+        let saldoCuenta = this.saldo + interes
+        return `el interes recibido es ${interes} saldo total de la cuenta es ${saldoCuenta}`
     }
-    extractoMensual(){
+    extractoMensual() {
 
 
     }
-    imprimir(){
+    imprimir() {
 
     }
 }
-
 
