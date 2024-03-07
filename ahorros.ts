@@ -1,12 +1,5 @@
 import Cuenta from "./Cuenta";
 
-<<<<<<< HEAD
-class Ahorros extends Cuenta {
-
-    public estado: boolean;
-
-  
-=======
 class Ahorros extends Cuenta{
     private estado: boolean;
 
@@ -17,64 +10,28 @@ class Ahorros extends Cuenta{
 
     }
 
->>>>>>> cuentaAhorros
+
     //Metodos
 
     getEstado(): boolean { 
         return this.estado;
 
     }
-<<<<<<< HEAD
-    setEstado(state: boolean) { 
-        this.estado = state;
-    }
-
-    getConsignar(): number {
-        return this.consignar;
-    }
-
-    setConsignar(consign: number) { 
-        this.consignar = consign;
-    }
-
-    getRetirar(): number {
-        return this.retirar;
-    }
-
-    setRetirar(withdraw: number) { 
-        this.retirar = withdraw;
-    }
-    getExtracto(): number {
-        return this.Extracto;
-
-    }
-    setExtracto(extract: number) {
-        this.extracto = extract;
-    }
 
 
-
-
-
-
-
-
-}
-=======
-
-    consignar(): void {
+    consignar(): string {
         if (this.estado) {
-            super.consignar();
+            return super.consignar();
         } else {
-            console.log("No se puede consignar el  dinero. La cuenta está inactiva.");
+            return "No se puede consignar el  dinero. La cuenta está inactiva.";
         }
     }
 
-    retirar(): void {
+    retirar(): string {
         if (this.estado) {
-            super.retirar();
+            return super.retirar;
         } else {
-            console.log("No se puede retirar el  dinero. La cuenta está inactiva.");
+            return "No se puede retirar el  dinero. La cuenta está inactiva.";
         }
     }
     
@@ -100,5 +57,3 @@ class Ahorros extends Cuenta{
     }
 }
  
-
->>>>>>> cuentaAhorros

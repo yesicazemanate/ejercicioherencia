@@ -29,16 +29,16 @@
     setNumRetiro(numRetiro: number) { 
         this.numRetiro = numRetiro
     }
-    get NumConsignacion(): number {
+    getNumConsignacion(): number {
         return this.numConsignacion
     }
-    set NumConsignacion(numConsignacion: number) {
+    setNumConsignacion(numConsignacion: number) {
         this.numConsignacion = numConsignacion
     }
-    get TasaAnual(): number { 
+    getTasaAnual(): number { 
         return this.tasaAnual
     }
-    set TasaAnual(tasaAnual: number) {
+    setTasaAnual(tasaAnual: number) {
         this.tasaAnual = tasaAnual
     }
     getComisionMes(): number {
@@ -53,14 +53,20 @@
         let saldoTotal=this.saldo+ consignacion
         console.log( `el saldo total de la cuenta es : ${saldoTotal} `)
     }
+ 
     retirar(retiro: number){
         if(retiro<= this.saldo){
         let retiroTotal = this.saldo-retiro
+
         console.log(`el saldo que se retiro es ${retiro}} el saldo total es ${retiroTotal}`)
         }
-    }
+
+        }   
+    
+
+    
     calcularInteresMensual(){
-        let interes= this.saldo * this.TasaAnual
+        let interes= this.saldo * this.tasaAnual
         let saldoCuenta = this.saldo+interes
         console.log(`el interes recibido es ${interes} saldo total de la cuenta es ${saldoCuenta}`)  
     }
