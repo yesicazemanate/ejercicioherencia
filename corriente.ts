@@ -35,4 +35,4 @@ class CuentaCorriente extends Cuenta {
    setsobreGiro(sobreGiro:number){
     this.sobreGiro = sobreGiro
    }
-}gi 
+} 

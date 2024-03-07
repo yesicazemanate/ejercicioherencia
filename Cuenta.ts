@@ -84,7 +84,6 @@ console.log(`el saldo total es ${extrato}`)
         numero consignacion: ${this.numConsignacion} 
         numero retiro: ${this.numRetiro}`
 
-    imprimir() {
-    }
+   
 }
-
+}
