@@ -48,18 +48,13 @@ class Ahorros extends Cuenta {
 
         const saldoFinal = saldo - comisionTotal;
 
-        // Imprimir el extracto mensual
-        // console.log("Extracto mensual:");
-        // console.log("Estado de la cuenta:", estado);
-        // console.log("Saldo actual:", saldo);
-        // console.log("Comisión total por retiros:", comisionTotal);
-        // console.log("Saldo final después de deducir comisiones:", saldoFinal);
+
+    }
+
+    newImpresion() {
+        return `Saldo actual: ${this.saldo}
+    Comisión mensual : ${this.comisionMes}
+    Número de transacciones realizadas:  ${this.numConsignacion + this.numRetiro} `
+
     }
 }
-
-// imprimir(){
-//     console.log("Saldo actual: " + this.saldo);
-//     console.log("Comisión mensual: " + this.comisionMensual);
-//     console.log("Número de transacciones realizadas: " + this.numTransacciones);
-
-// }
