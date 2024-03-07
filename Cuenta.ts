@@ -60,7 +60,7 @@
         }
     }
     calcularInteresMensual(){
-        let interes= this.saldo * this.tasaAnualasaAnual
+        let interes= this.saldo * this.tasaAnual
         let saldoCuenta = this.saldo+interes
 return  `el interes recibido es ${interes} saldo total de la cuenta es ${saldoCuenta}`
     }
