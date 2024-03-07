@@ -1,6 +1,6 @@
 import Cuenta from "./Cuenta";
 
-class Ahorros extends Cuenta {
+export default class Ahorros extends Cuenta {
 
     public estado: boolean;
 
