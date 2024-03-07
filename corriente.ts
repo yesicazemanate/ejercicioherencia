@@ -8,31 +8,36 @@ export default class CuentaCorriente extends Cuenta {
         this.sobreGiro = sobreGiro;
     }
 
-    retirar(retiro:number) : number {
+    retirar(retiro:number)  {
       super.retirar(retiro)
-      if(this.numRetiro > this.saldo ){
+      if(retiro > this.saldo ){
         return this.sobreGiro = retiro - this.saldo
       }else{
-        return this.sobreGiro
+        return `Retiro es menor que saldo${this.saldo}`
       }
       
     }
 
-    consignar(consignacion: number): number {
+    consignar(consignacion: number){
         super.consignar(consignacion)
         if(this.sobreGiro > 0){
-         return this.sobreGiro = this.numConsignacion - this.sobreGiro
+         return this.sobreGiro = consignacion - this.sobreGiro
         }else{
-          return this.numConsignacion
+          return `No hay sobregiro valor:${this.sobreGiro}`
         }
     }
    imprimirCuentaCorriente(){
     console.log(`Saldo cuenta${this.saldo}, Comision mensual ${this.comisionMes} Transacciones realizadas ${this.numConsignacion+ this.numRetiro} Valor de Sobregiro${this.sobreGiro}`)
    }
+   extractoMensual(){
+    super.extractoMensual()
+       return ("Se invoco")
+   }
+
    getsobreGiro():number  {
     return this.sobreGiro 
    }
    setsobreGiro(sobreGiro:number){
     this.sobreGiro = sobreGiro
    }
-}gi 
+}
