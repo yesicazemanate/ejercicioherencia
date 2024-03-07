@@ -29,16 +29,16 @@
     setNumRetiro(numRetiro: number) { 
         this.numRetiro = numRetiro
     }
-    get NumConsignacion(): number {
+    getNumConsignacion(): number {
         return this.numConsignacion
     }
-    set NumConsignacion(numConsignacion: number) {
+    setNumConsignacion(numConsignacion: number) {
         this.numConsignacion = numConsignacion
     }
-    get TasaAnual(): number { 
+    getTasaAnual(): number { 
         return this.tasaAnual
     }
-    set TasaAnual(tasaAnual: number) {
+    setTasaAnual(tasaAnual: number) {
         this.tasaAnual = tasaAnual
     }
     getComisionMes(): number {
@@ -49,23 +49,27 @@
     }
 
     
-    consignar(){
-        let saldoTotal=this.saldo+ this.numConsignacion
+    consignar(consignacion : number ){
+        let saldoTotal=this.saldo+ consignacion
         return `el saldo total de la cuenta es : ${saldoTotal} `
     }
-    retirar(){
-        if(this.numRetiro<= this.saldo){
-        let retiroTotal = this.saldo-this.numRetiro
-        return `el saldo que se retiro es ${this.numRetiro}} el saldo total es ${retiroTotal}`
+ 
+    retirar(retiro: number){
+        if(retiro<= this.saldo){
+        let retiroTotal = this.saldo-retiro
+        return `el saldo que se retiro es ${retiro}} el saldo total es ${retiroTotal}`
         } else {
-          return "No se puede retirar el dinero por saldo insuficiente"  
+            return "No se puede retirar el dinero por saldo insuficiente"  
         }
 
     }
     calcularInteresMensual(){
-
+        let interes= this.saldo * this.tasaAnual
+        let saldoCuenta = this.saldo+interes
+return  `el interes recibido es ${interes} saldo total de la cuenta es ${saldoCuenta}`
     }
     extractoMensual(){
+
 
     }
     imprimir(){
