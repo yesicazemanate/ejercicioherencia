@@ -57,7 +57,10 @@
         if(this.numRetiro<= this.saldo){
         let retiroTotal = this.saldo-this.numRetiro
         return `el saldo que se retiro es ${this.numRetiro}} el saldo total es ${retiroTotal}`
+        } else {
+          return "No se puede retirar el dinero por saldo insuficiente"  
         }
+
     }
     calcularInteresMensual(){
 
