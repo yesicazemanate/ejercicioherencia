@@ -1,6 +1,10 @@
 import Cuenta from "./Cuenta";
 
+<<<<<<< HEAD
 export default class Ahorros extends Cuenta {
+=======
+class Ahorros extends Cuenta {
+>>>>>>> d2f7ca150a84ecda24f00bf0366aad8ef340a981
     private estado: boolean;
 
     constructor(numRetiro: number, numConsignacion: number, saldo: number, tasaAnual: number, comisionMes: number) {
@@ -19,19 +23,27 @@ export default class Ahorros extends Cuenta {
     }
 
 
+<<<<<<< HEAD
     consignar(){
+=======
+    consignar(consignacion: number) {
+>>>>>>> d2f7ca150a84ecda24f00bf0366aad8ef340a981
         if (this.estado) {
-            return super.consignar();
+            super.consignar(consignacion);
         } else {
-            return "No se puede consignar el  dinero. La cuenta está inactiva.";
+            console.log("No se puede consignar el  dinero. La cuenta está inactiva.");
         }
     }
 
+<<<<<<< HEAD
     retirar(){
+=======
+    retirar(retiro: number) {
+>>>>>>> d2f7ca150a84ecda24f00bf0366aad8ef340a981
         if (this.estado) {
-            return super.retirar;
+            super.retirar(retiro);
         } else {
-            return "No se puede retirar el  dinero. La cuenta está inactiva.";
+            console.log("No se puede retirar el  dinero. La cuenta está inactiva.");
         }
     }
 
@@ -57,3 +69,12 @@ export default class Ahorros extends Cuenta {
     }
 }
 
+<<<<<<< HEAD
+=======
+// imprimir(){
+//     console.log("Saldo actual: " + this.saldo);
+//     console.log("Comisión mensual: " + this.comisionMensual);
+//     console.log("Número de transacciones realizadas: " + this.numTransacciones);
+
+// }
+>>>>>>> d2f7ca150a84ecda24f00bf0366aad8ef340a981
