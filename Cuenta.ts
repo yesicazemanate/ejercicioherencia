@@ -1,4 +1,4 @@
-class Cuenta {
+// class Cuenta {
 export default class Cuenta {
 
     protected numRetiro: number = 0;
@@ -54,7 +54,7 @@ export default class Cuenta {
         
     }
     retirar(){
-
+        
     }
     calcularInteresMensual(){
 
