@@ -59,7 +59,11 @@
         let retiroTotal = this.saldo-retiro
         return `el saldo que se retiro es ${retiro}} el saldo total es ${retiroTotal}`
         } else {
+<<<<<<< HEAD
             return "No se puede retirar el dinero por saldo insuficiente"  
+=======
+        return "El saldo es insuficiente"
+>>>>>>> cuentaAhorros
         }
 
     }

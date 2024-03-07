@@ -1,7 +1,5 @@
 import Cuenta from "./Cuenta";
 
-<<<<<<< HEAD
-  
 class Ahorros extends Cuenta{
     private estado: boolean;
 
@@ -12,20 +10,14 @@ class Ahorros extends Cuenta{
 
     }
 
-=======
-class Ahorros extends Cuenta {
 
-    public estado: boolean;
-
-  
->>>>>>> 4b7e03ebec26a25ab5691f58b8df542f811f867c
     //Metodos
 
     getEstado(): boolean { 
         return this.estado;
 
     }
-<<<<<<< HEAD
+
 
     consignar(): string {
         if (this.estado) {
@@ -65,41 +57,3 @@ class Ahorros extends Cuenta {
     }
 }
  
-
-=======
-    setEstado(state: boolean) { 
-        this.estado = state;
-    }
-
-    getConsignar(): number {
-        return this.consignar;
-    }
-
-    setConsignar(consign: number) { 
-        this.consignar = consign;
-    }
-
-    getRetirar(): number {
-        return this.retirar;
-    }
-
-    setRetirar(withdraw: number) { 
-        this.retirar = withdraw;
-    }
-    getExtracto(): number {
-        return this.Extracto;
-
-    }
-    setExtracto(extract: number) {
-        this.extracto = extract;
-    }
-
-
-
-
-
-
-
-
-}
->>>>>>> 4b7e03ebec26a25ab5691f58b8df542f811f867c
