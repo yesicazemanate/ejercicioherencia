@@ -16,28 +16,28 @@ class Cuenta {
 
     }
 
-    get NumRetiro(): number { 
+    getNumRetiro(): number { 
         return this.numRetiro
     }
-    set NumRetiro(numRetiro: number) { 
+    setNumRetiro(numRetiro: number) { 
         this.numRetiro = numRetiro
     }
-    get NumConsignacion(): number {
+    getNumConsignacion(): number {
         return this.numConsignacion
     }
-    set NumConsignacion(numConsignacion: number) {
+    setNumConsignacion(numConsignacion: number) {
         this.numConsignacion = numConsignacion
     }
-    get TasaAnual(): number { 
+    getTasaAnual(): number { 
         return this.tasaAnual
     }
-    set TasaAnual(tasaAnual: number) {
+    setTasaAnual(tasaAnual: number) {
         this.tasaAnual = tasaAnual
     }
-    get ComisionMes(): number {
+    getComisionMes(): number {
         return this.comisionMes
     }
-    set ComisionMes(comisionMes: number) {
+    setComisionMes(comisionMes: number) {
         this.comisionMes = comisionMes
     }
 }
