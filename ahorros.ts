@@ -19,19 +19,19 @@ class Ahorros extends Cuenta{
     }
 
 
-    consignar(): string {
+    consignar(consignacion: number) {
         if (this.estado) {
-            return super.consignar();
+             super.consignar(consignacion);
         } else {
-            return "No se puede consignar el  dinero. La cuenta está inactiva.";
+            console.log("No se puede consignar el  dinero. La cuenta está inactiva.");
         }
     }
 
-    retirar(): string {
+    retirar(retiro: number) {
         if (this.estado) {
-            return super.retirar;
+            super.retirar(retiro);
         } else {
-            return "No se puede retirar el  dinero. La cuenta está inactiva.";
+            console.log("No se puede retirar el  dinero. La cuenta está inactiva.");
         }
     }
     
