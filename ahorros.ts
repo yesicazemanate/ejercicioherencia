@@ -19,7 +19,7 @@ class Ahorros extends Cuenta{
     }
 
 
-    consignar(consignacion: number): number {
+    consignar(consignacion: number) {
         if (this.estado) {
              super.consignar(consignacion);
         } else {
@@ -27,7 +27,7 @@ class Ahorros extends Cuenta{
         }
     }
 
-    retirar(retiro: number): number {
+    retirar(retiro: number) {
         if (this.estado) {
             super.retirar(retiro);
         } else {
