@@ -36,11 +36,7 @@ export default class Cuenta {
     setNumConsignacion(numConsignacion: number) {
         this.numConsignacion = numConsignacion
     }
-<<<<<<< HEAD
-    get TasaAnual(): number {
-=======
-    getTasaAnual(): number { 
->>>>>>> 4fd13d7e50d59de7bc11e139db5d9b9400ba7255
+    getTasaAnual(): number {
         return this.tasaAnual
     }
     setTasaAnual(tasaAnual: number) {
@@ -53,7 +49,6 @@ export default class Cuenta {
         this.comisionMes = comisionMes
     }
 
-<<<<<<< HEAD
 
     consignar(consignacion: number) {
         let saldoTotal = this.saldo + consignacion
@@ -66,39 +61,12 @@ export default class Cuenta {
         }
     }
     calcularInteresMensual() {
-        let interes = this.saldo * this.TasaAnual
+        let interes = this.saldo * this.tasaAnual
         let saldoCuenta = this.saldo + interes
         return `el interes recibido es ${interes} saldo total de la cuenta es ${saldoCuenta}`
     }
     extractoMensual() {
 
-=======
-    
-    consignar(consignacion : number ){
-        let saldoTotal=this.saldo+ consignacion
-        console.log( `el saldo total de la cuenta es : ${saldoTotal} `)
-    }
- 
-    retirar(retiro: number){
-        if(retiro<= this.saldo){
-        let retiroTotal = this.saldo-retiro
-
-        console.log(`el saldo que se retiro es ${retiro}} el saldo total es ${retiroTotal}`)
-        }
-
-        }   
-    
-
-    
-    calcularInteresMensual(){
-        let interes= this.saldo * this.tasaAnual
-        let saldoCuenta = this.saldo+interes
-        console.log(`el interes recibido es ${interes} saldo total de la cuenta es ${saldoCuenta}`)  
-    }
-    extractoMensual(){
-        let extrato= this.saldo-this.comisionMes
-        this.calcularInteresMensual()
->>>>>>> 4fd13d7e50d59de7bc11e139db5d9b9400ba7255
 
     }
     imprimir() {
