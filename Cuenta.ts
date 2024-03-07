@@ -74,10 +74,17 @@ export default class Cuenta {
     extractoMensual(){
         let extrato= this.saldo-this.comisionMes
         this.calcularInteresMensual()
-
+console.log(`el saldo total es ${extrato}`)
     }
-    imprimir() {
 
+    imprimir(){
+        return `saldo: ${this.saldo}
+        tasa anual: ${this.tasaAnual}
+        comision mensual: ${this.comisionMes}
+        numero consignacion: ${this.numConsignacion} 
+        numero retiro: ${this.numRetiro}`
+
+    imprimir() {
     }
 }
 
