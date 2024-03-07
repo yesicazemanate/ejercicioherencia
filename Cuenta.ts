@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 class Cuenta {
-=======
 export default class Cuenta {
 
->>>>>>> Maryuri
     protected numRetiro: number = 0;
     protected numConsignacion: number = 0;
     protected saldo: number
